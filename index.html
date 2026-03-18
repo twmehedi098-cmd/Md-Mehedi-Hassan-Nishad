@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- PRIMARY TITLE - Shows in search results first line -->
+    <title>Mehedi Hassan Nishad (nyshvaultx) - Web Developer | Portfolio</title>
+    
+    <!-- META DESCRIPTION - Shows in search results second line -->
+    <meta name="description" content="Mehedi Hassan Nishad (nyshvaultx) - Web Developer. I work with complete dedication, the outcome is in Allah's hands. Skilled in HTML, CSS, JavaScript.">
+    
+    <!-- KEYWORDS - Important keywords for search engines -->
+    <meta name="keywords" content="Mehedi Hassan Nishad, nyshvaultx, web developer, HTML, CSS, JavaScript, frontend developer, Bangladesh, portfolio">
+    
+    <!-- AUTHOR - Content creator name -->
+    <meta name="author" content="Mehedi Hassan Nishad">
+    
+    <!-- ROBOTS - Instructions for search engines -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- CANONICAL URL - Avoid duplicate content -->
+    <link rel="canonical" href="https://nyshvaultx.vercel.app/">
+    
+    <!-- LANGUAGE DETECTION -->
+    <meta http-equiv="content-language" content="en">
+    
+    <!-- OPEN GRAPH TAGS - For social media sharing -->
+    <meta property="og:title" content="Mehedi Hassan Nishad (nyshvaultx) - Web Developer">
+    <meta property="og:description" content="Web Developer Mehedi Hassan Nishad's portfolio. I work with complete dedication.">
+    <meta property="og:image" content="https://i.ibb.co/DP1KYj7d/1766377749814.jpg">
+    <meta property="og:url" content="https://nyshvaultx.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mehedi Hassan Nishad Portfolio">
+    
+    <!-- TWITTER CARD TAGS -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mehedi Hassan Nishad (nyshvaultx)">
+    <meta name="twitter:description" content="Web Developer Mehedi Hassan Nishad's portfolio.">
+    <meta name="twitter:image" content="https://i.ibb.co/DP1KYj7d/1766377749814.jpg">
+    
+    <!-- FAVICON - Your profile picture as website logo -->
+    <link rel="icon" type="image/png" href="https://i.ibb.co/DP1KYj7d/1766377749814.jpg">
+    <link rel="shortcut icon" href="https://i.ibb.co/DP1KYj7d/1766377749814.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://i.ibb.co/DP1KYj7d/1766377749814.jpg">
+    
+    <!-- GOOGLE FONT + FONT AWESOME -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- DNS PREFETCH - Speed optimization -->
+    <link rel="dns-prefetch" href="//www.facebook.com">
+    <link rel="dns-prefetch" href="//www.instagram.com">
+    <link rel="dns-prefetch" href="//wa.me">
+    <link rel="dns-prefetch" href="//www.threads.net">
+    <link rel="dns-prefetch" href="//www.snapchat.com">
+    <link rel="dns-prefetch" href="//www.youtube.com">
+    <link rel="dns-prefetch" href="//discord.gg">
+    <link rel="dns-prefetch" href="//t.me">
+    
+    <style>
+        /* ---------- RESET / GLOBAL ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at 10% 20%, #0b0d1a, #030514);
+            color: #f0f3fa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ---------- CUSTOM SCROLLBAR ---------- */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(10, 20, 10, 0.5);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #00c853;
+            border-radius: 8px;
+            box-shadow: inset 0 0 6px #aaffbb;
+        }
+
+        /* ---------- TYPOGRAPHY ---------- */
+        h1, h2, h3 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        /* ---------- HEADER / PROFILE ---------- */
+        header {
+            text-align: center;
+            padding: 80px 20px 50px;
+            background: rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(4px);
+            border-bottom: 1px solid rgba(0, 200, 83, 0.25);
+        }
+
+        .profile-ring {
+            display: inline-block;
+            position: relative;
+            padding: 8px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #00ffaa, #008b3a);
+            box-shadow: 0 0 20px #00ffaa, 0 0 50px #1ebc5e;
+            transition: box-shadow 0.3s ease;
+        }
+        .profile-ring:hover {
+            box-shadow: 0 0 30px #40ff88, 0 0 80px #00e676;
+        }
+
+        .profile-pic {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #0b0f18;
+            display: block;
+            transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.1);
+        }
+        .profile-pic:hover {
+            transform: scale(1.02);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            margin: 24px 0 8px;
+            background: linear-gradient(135deg, #ccffd0, #a0ffb0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 15px #00c85340;
+        }
+
+        .tagline {
+            font-size: 1.3rem;
+            color: #b0e0c0;
+            font-weight: 400;
+            max-width: 700px;
+            margin: 0 auto;
+            background: rgba(0, 100, 0, 0.2);
+            padding: 10px 22px;
+            border-radius: 60px;
+            backdrop-filter: blur(4px);
+            display: inline-block;
+            border: 1px solid #2e7d5e;
+        }
+
+        /* ---------- MAIN LAYOUT ---------- */
+        main {
+            flex: 1;
+            padding: 20px 20px 40px;
+            max-width: 1300px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Section cards with glassmorphism + refined glow */
+        section {
+            background: rgba(18, 22, 35, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 200, 100, 0.25);
+            border-radius: 42px;
+            padding: 3rem 2.5rem;
+            margin: 4rem auto;
+            max-width: 1000px;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(0, 255, 150, 0.1) inset;
+            position: relative;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+        section:hover {
+            box-shadow: 0 30px 55px -10px #000, 0 0 0 1px #00c85355 inset;
+        }
+
+        /* Subtle green aura left/right */
+        section::before,
+        section::after {
+            content: '';
+            position: absolute;
+            top: 20%;
+            bottom: 20%;
+            width: 180px;
+            background: radial-gradient(circle, #00c85330, transparent 90%);
+            filter: blur(60px);
+            opacity: 0.4;
+            z-index: -1;
+            transition: opacity 0.4s;
+        }
+        section:hover::before,
+        section:hover::after {
+            opacity: 0.7;
+        }
+        section::before {
+            left: -70px;
+        }
+        section::after {
+            right: -70px;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            color: #d0ffd0;
+            text-shadow: 0 2px 5px #1e4a2a;
+        }
+        h2 i {
+            color: #00e676;
+            font-size: 2rem;
+            filter: drop-shadow(0 0 5px #0f0);
+        }
+
+        /* About text specific — typing container */
+        .about-typing {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #d0e0d8;
+            max-width: 750px;
+            margin: 0 auto;
+            font-weight: 400;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.8;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        /* Blinking cursor effect */
+        .cursor {
+            display: inline-block;
+            width: 3px;
+            margin-left: 4px;
+            background-color: #00e676;
+            animation: blink 0.9s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* Skills / journey lists */
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        li {
+            background: rgba(0, 200, 100, 0.08);
+            padding: 18px 26px;
+            border-radius: 40px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            border: 1px solid #2e7d5e40;
+            box-shadow: 0 6px 14px rgba(0, 30, 0, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: 0.2s;
+            color: #e2f2e6;
+        }
+        li:hover {
+            background: rgba(0, 230, 120, 0.15);
+            border-color: #2e9d6e;
+            transform: translateX(8px) scale(1.01);
+        }
+        li i {
+            color: #3affa3;
+            font-size: 1.8rem;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        /* ---------- SOCIAL GLASS CARD (connect) ---------- */
+        .social {
+            background: rgba(12, 18, 28, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(0, 230, 150, 0.3);
+            border-radius: 80px 80px 40px 40px;
+            padding: 3rem 2rem 2.5rem;
+            margin: 5rem auto 3rem;
+            max-width: 1000px;
+            box-shadow: 0 30px 50px -25px black, 0 0 0 1px #1b4f34 inset;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(115deg, 
+                transparent 20%, 
+                rgba(120, 255, 120, 0.2) 40%,
+                rgba(200, 255, 200, 0.35) 50%,
+                rgba(120, 255, 120, 0.2) 60%,
+                transparent 80%
+            );
+            background-size: 250% 250%;
+            animation: shine-sweep 8s infinite ease;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.7;
+        }
+
+        @keyframes shine-sweep {
+            0% { background-position: 150% 150%; }
+            100% { background-position: -50% -50%; }
+        }
+
+        .social h2 {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 2.8rem;
+        }
+
+        .social-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px 28px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .social a {
+            display: block;
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+            transition: all 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.2);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7), 0 0 0 2px transparent;
+            border: 2px solid rgba(180, 255, 180, 0.4);
+            overflow: hidden;
+        }
+
+        .social a:hover {
+            transform: translateY(-12px) scale(1.1);
+            border-color: #aaffaa;
+            box-shadow: 0 18px 30px -8px #000, 0 0 30px #1fffa0;
+        }
+
+        .social img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            background: #1b2b1f;
+        }
+
+        /* Footer minimal */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(0, 10, 5, 0.5);
+            backdrop-filter: blur(8px);
+            border-top: 1px solid #1c5f3e;
+            color: #9bbfaa;
+            font-size: 1rem;
+            letter-spacing: 0.3px;
+            margin-top: 30px;
+        }
+        footer i {
+            color: #40ff80;
+            margin: 0 6px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 700px) {
+            header { padding: 50px 15px 30px; }
+            .profile-pic { width: 170px; height: 170px; }
+            h1 { font-size: 2.8rem; }
+            .tagline { font-size: 1.1rem; }
+            section { padding: 2.2rem 1.5rem; border-radius: 32px; }
+            section::before, section::after { opacity: 0.2; width: 100px; }
+            h2 { font-size: 2rem; }
+            .about-typing { min-height: 200px; font-size: 1rem; }
+            li { padding: 14px 18px; font-size: 1rem; gap: 12px; }
+            .social { border-radius: 50px; padding: 2rem 1rem; }
+            .social a { width: 75px; height: 75px; }
+        }
+
+        @media (max-width: 480px) {
+            .social-container { gap: 18px; }
+            .social a { width: 65px; height: 65px; }
+        }
+
+        /* Reduce motion if prefers */
+        @media (prefers-reduced-motion: reduce) {
+            * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="profile-ring">
+        <img src="https://i.ibb.co/DP1KYj7d/1766377749814.jpg" alt="Mehedi Hassan Nishad - Web Developer" class="profile-pic" loading="eager">
+    </div>
+    <h1>Mehedi Hassan Nishad</h1>
+    <p class="tagline"><i class="fas fa-heart" style="color:#80ff80;"></i> I give my full effort · The outcome is in Allah's hands <i class="fas fa-heart" style="color:#80ff80;"></i></p>
+</header>
+
+<main>
+    <!-- ABOUT SECTION with typing effect -->
+    <section>
+        <h2><i class="fas fa-user-astronaut"></i> About Me <i class="fas fa-sparkles" style="font-size:1.8rem;"></i></h2>
+        <div id="typingAbout" class="about-typing">
+            <span id="aboutText"></span><span class="cursor"></span>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section>
+        <h2><i class="fas fa-code"></i> Skills <i class="fas fa-rocket"></i></h2>
+        <ul>
+            <li><i class="fas fa-bolt"></i> 💯 Full commitment — until the result arrives</li>
+            <li><i class="fas fa-hourglass-half"></i> ⏳ Moving forward with patience — trusting Allah's timing</li>
+            <li><i class="fas fa-shield-virus"></i> 🛡️ Facing challenges — never giving up</li>
+            <li><i class="fas fa-ruler-combined"></i> 📏 Discipline — following rules, because that is the path to success</li>
+            <li><i class="fas fa-hands-praying"></i> 🤲 Tawakkul — I work hard and leave the results to Allah</li>
+        </ul>
+    </section>
+
+    <!-- JOURNEY SECTION -->
+    <section>
+        <h2><i class="fas fa-tree"></i> Journey <i class="fas fa-cloud-moon"></i></h2>
+        <ul>
+            <li><i class="fas fa-seedling"></i> 🌱 From the beginning until now — I have come this far by Allah's mercy</li>
+            <li><i class="fas fa-moon"></i> 🌙 Every difficult moment — I overcame it with Allah's help</li>
+            <li><i class="fas fa-star-and-crescent"></i> 🔮 The future — completely in Allah's hands. I will only keep striving and praying. InshaAllah, whatever He gives will be better than what I expect. ✨</li>
+        </ul>
+    </section>
+
+    <!-- SOCIAL MEDIA CONNECT SECTION -->
+    <div class="social">
+        <h2><i class="fab fa-connectdevelop"></i> Digital Presence <i class="fas fa-globe"></i></h2>
+        <div class="social-container">
+            <a href="https://www.facebook.com/nyshvaultx" target="_blank" rel="noopener">
+                <img src="https://i.ibb.co/nq02pCxk/IMG-20251227-WA0013.jpg" alt="Facebook - nyshvaultx" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com/mehedi_hassan_nishad" target="_blank" rel="noopener">
+                <img src="https://i.ibb.co/B5TgjF7t/IMG-20251227-WA0017-1.jpg" alt="Instagram - mehedi_hassan_nishad" loading="lazy">
+            </a>
+            <a href="https://wa.me/8801325161280" target="_blank" rel="noopener">
+                <img src="https://i.ibb.co/Z65Lj5wr/grok-1766854134442.jpg" alt="WhatsApp - Mehedi Hassan" loading="lazy">
+            </a>
+            <a href="https://www.threads.net/@mehedi_hassan_nishad" target="_blank" rel="noopener">
+                <img src="https://i.ibb.co/NgyvKGqd/IMG-20251227-WA0014.jpg" alt="Threads - mehedi_hassan_nishad" loading="lazy">
+            </a>
+            <a href="https://www.snapchat.com/add/mehedi-hassan" target="_blank" rel="noopener">
+                <img src="https://i.ibb.co/DffcH215/grok-1766853112746.jpg" alt="Snapchat - mehedi-hassan" loading="lazy">
+            </a>
+            <a href="https://www.youtube.com/@%E4%BA%97Nexuz%E4%BA%97" target="_blank" rel="noopener">
+                <img src="https://i.ibb.co/Q35sJQPY/IMG-20251227-WA0018.jpg" alt="YouTube - Nexuz" loading="lazy">
+            </a>
+            <a href="https://discord.gg/w4r9sdwb" target="_blank" rel="noopener">
+                <img src="https://i.ibb.co/1YFQK0tg/IMG-20251227-WA0016.jpg" alt="Discord - w4r9sdwb" loading="lazy">
+            </a>
+            <a href="https://t.me/Md_Mehedi_Hassan_Nishad" target="_blank" rel="noopener">
+                <img src="https://i.ibb.co/4ZHmYV5c/IMG-20251227-WA0019.jpg" alt="Telegram - Md Mehedi Hassan" loading="lazy">
+            </a>
+        </div>
+        <!-- Subtle micro-interaction hint -->
+        <div style="display:flex; justify-content:center; gap:8px; margin-top:30px; opacity:0.4">
+            <i class="fas fa-circle" style="font-size: 8px; color:#8affb8;"></i>
+            <i class="fas fa-circle" style="font-size: 10px; color:#8affb8;"></i>
+            <i class="fas fa-circle" style="font-size: 8px; color:#8affb8;"></i>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <i class="fas fa-copyright"></i> 2025 Mehedi Hassan Nishad · <i class="fas fa-mosque"></i> Everything is for Allah  <i class="fas fa-feather-alt"></i>
+</footer>
+
+<script>
+    (function() {
+        // Typing effect text in English
+        const fullText = `👋 I am Mehedi Hassan Nishad (MHN)
+🌙 I do not rely on myself — I place my trust in Allah.
+🔥 Whatever I do, I do it with complete dedication. No excuses.
+⚔️ When challenges come, I face them, because I know Allah is with me.
+🕋 The control of my life is in Allah's hands — I simply make the most of the opportunities He provides.`;
+
+        // DOM elements
+        const aboutSpan = document.getElementById('aboutText');
+        const cursorSpan = document.querySelector('.cursor');
+
+        // Typing control variables
+        let i = 0;
+        let isDeleting = false;
+        let timeoutHandle = null;
+        let isPaused = false;
+        let pauseTimeout = null;
+
+        // Speed settings
+        const typeSpeed = 50;
+        const deleteSpeed = 20;
+        const pauseBetweenCycles = 10000; // 10 seconds pause when full text is shown
+
+        function initTyping() {
+            // Cancel any pending timeouts
+            if (timeoutHandle) clearTimeout(timeoutHandle);
+            if (pauseTimeout) clearTimeout(pauseTimeout);
+
+            // Reset state
+            i = 0;
+            isDeleting = false;
+            isPaused = false;
+            aboutSpan.innerText = '';
+            cursorSpan.style.display = 'inline-block';
+            type();
+        }
+
+        function type() {
+            // If paused, do nothing
+            if (isPaused) return;
+
+            if (!isDeleting && i <= fullText.length) {
+                // Typing forward
+                aboutSpan.innerText = fullText.substring(0, i);
+                i++;
+                
+                if (i > fullText.length) {
+                    // Finished typing - pause for 10 seconds
+                    if (!isPaused) {
+                        isPaused = true;
+                        pauseTimeout = setTimeout(() => {
+                            isPaused = false;
+                            isDeleting = true; // Start deleting
+                            type();
+                        }, pauseBetweenCycles);
+                    }
+                    return;
+                } else {
+                    // Continue typing
+                    timeoutHandle = setTimeout(type, typeSpeed);
+                }
+            } 
+            else if (isDeleting && i >= 0) {
+                // Deleting characters
+                aboutSpan.innerText = fullText.substring(0, i);
+                i--;
+                
+                if (i < 0) {
+                    // Deleted everything - restart typing
+                    isDeleting = false;
+                    i = 0;
+                    timeoutHandle = setTimeout(type, typeSpeed);
+                    return;
+                } else {
+                    timeoutHandle = setTimeout(type, deleteSpeed);
+                }
+            }
+        }
+
+        // Start typing animation when page loads
+        window.addEventListener('load', initTyping);
+    })();
+</script>
+
+<!-- JSON-LD STRUCTURED DATA - Helps Google understand your content better -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mehedi Hassan Nishad",
+  "url": "https://nyshvaultx.vercel.app/",
+  "image": "https://i.ibb.co/DP1KYj7d/1766377749814.jpg",
+  "sameAs": [
+    "https://www.facebook.com/nyshvaultx",
+    "https://www.instagram.com/mehedi_hassan_nishad",
+    "https://wa.me/8801325161280",
+    "https://www.youtube.com/@%E4%BA%97Nexuz%E4%BA%97",
+    "https://t.me/Md_Mehedi_Hassan_Nishad"
+  ],
+  "jobTitle": "Web Developer",
+  "description": "Web developer who works with complete dedication, trusting Allah for the outcomes.",
+  "knowsAbout": ["HTML", "CSS", "JavaScript", "Frontend Development"],
+  "nationality": "Bangladeshi",
+  "gender": "Male"
+}
+</script>
+
+</body>
+</html>
